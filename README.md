@@ -4,6 +4,18 @@
 A highly scalable, multi-threaded Deep Packet Inspection (DPI) engine. Capable of parsing both TCP (HTTPS) and UDP (QUIC/HTTP3) packets, this engine uses zero-copy parsing and consistent hashing across thread pools to achieve massive performance. It analyzes network flows in real-time to identify application signatures (YouTube, Netflix, Facebook) and applies dynamic rules like domain-blocking and Token-Bucket bandwidth throttling.
 
 
+## Project Demo :
+
+### 🎥 Engine in Action
+**Basic Usage:**
+
+https://github.com/user-attachments/assets/dc76af6f-8200-40b0-b630-063eaed15e27
+
+
+**With Block and Throttle Rules Active:**
+
+https://github.com/user-attachments/assets/61a974b4-33d8-447b-8812-0b87c59bd5c2
+
 
 ---
 
@@ -76,9 +88,13 @@ User Traffic (PCAP) → [DPI Engine] → Filtered Traffic (PCAP)
                     └─────────────┘
 ```
 
+### 🔍 Wireshark Packet Captures :
 
+**Before Filtering:**
+<img width="1920" height="997" alt="before_filtering" src="https://github.com/user-attachments/assets/83089b97-82ae-473d-b676-991dd197ea08" />
 
-
+**After Filtering:**
+<img width="1920" height="990" alt="after_filtering" src="https://github.com/user-attachments/assets/c582b258-4383-461d-83b3-38759534bb3e" />
 
 ### Two Versions
 
